@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guida Ospiti</title>
+<title>Guida Ospiti – Fénis</title>
 
 <style>
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#333}
 header{background:#1f2f3f;color:white;padding:26px;text-align:center}
-nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
 nav a{color:white;text-decoration:none;font-size:14px;background:#32475b;padding:6px 10px;border-radius:6px}
 .container{max-width:1050px;margin:auto;padding:20px}
 .card{background:white;padding:22px;margin-bottom:20px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.08)}
@@ -22,11 +22,11 @@ ul{padding-left:18px}
 footer{text-align:center;padding:30px;font-size:14px;color:#777}
 .map{width:100%;height:380px;border:0;border-radius:10px}
 .service{background:#f0f3f7;padding:14px;border-radius:8px;margin-top:10px}
+.restaurant{display:grid;grid-template-columns:110px 1fr;gap:12px;margin-bottom:14px}
+.restaurant img{width:110px;height:85px;object-fit:cover}
+.highlight{background:#f0f3f7;padding:12px;border-radius:8px;margin-top:10px}
 input,textarea,select{width:100%;padding:8px;margin-top:6px;margin-bottom:10px;border-radius:6px;border:1px solid #ccc}
 form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-radius:6px}
-.restaurant{display:grid;grid-template-columns:100px 1fr;gap:12px;margin-bottom:12px}
-.restaurant img{width:100px;height:80px;object-fit:cover}
-.pinlist li{margin-bottom:6px}
 </style>
 
 </head>
@@ -34,16 +34,17 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <body>
 
 <header>
-<h1>🏡 Guida dell'Appartamento</h1>
-<p>Tutte le informazioni utili per il tuo soggiorno</p>
+<h1>🏡 Benvenuti a Fénis</h1>
+<p>Guida digitale dell'appartamento e della zona</p>
 
 <nav>
-<a href="#wifi">Wi‑Fi</a>
+<a href="#wifi">Wi-Fi</a>
 <a href="#casa">Casa</a>
-<a href="#servizi">Servizi</a>
-<a href="#mappa">Mappa</a>
+<a href="#cosa-vedere">Cosa vedere</a>
 <a href="#ristoranti">Ristoranti</a>
-<a href="#recensioni">Recensioni</a>
+<a href="#esperienze">Esperienze</a>
+<a href="#mappa">Mappa</a>
+<a href="#servizi">Servizi</a>
 </nav>
 
 <div id="google_translate_element"></div>
@@ -53,14 +54,14 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <div class="container">
 
 <div class="card" id="wifi">
-<h2>📶 Wi‑Fi</h2>
+<h2>📶 Wi-Fi</h2>
 <p><strong>Rete:</strong> INSERIRE_WIFI</p>
 <p><strong>Password:</strong> INSERIRE_PASSWORD</p>
 </div>
 
 <div class="card">
 <h2>📞 Contatta l'host</h2>
-<p>Per qualsiasi necessità puoi contattarci direttamente.</p>
+<p>Per qualsiasi necessità siamo sempre disponibili.</p>
 <a class="button" href="tel:+391234567890">📞 Chiama</a>
 <a class="button" href="https://wa.me/391234567890">💬 WhatsApp</a>
 </div>
@@ -106,8 +107,77 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 </div>
 </div>
 
+<div class="card" id="cosa-vedere">
+<h2>🏰 Da non perdere vicino a Fénis</h2>
+<ul>
+<li><strong>Castello di Fénis</strong> – uno dei castelli medievali più famosi della Valle d'Aosta</li>
+<li><strong>Città di Aosta</strong> – centro storico romano e shopping</li>
+<li><strong>Castello di Issogne</strong> – famoso per gli affreschi rinascimentali</li>
+<li><strong>Castello di Verrès</strong> – fortezza medievale spettacolare</li>
+<li><strong>Parco Nazionale del Gran Paradiso</strong> – natura e trekking</li>
+</ul>
+</div>
+
+<div class="card" id="esperienze">
+<h2>🚲 Esperienze in Valle d'Aosta</h2>
+
+<div class="highlight">
+🥾 Trekking panoramici
+</div>
+
+<div class="highlight">
+🚲 Noleggio e-bike e percorsi ciclabili
+</div>
+
+<div class="highlight">
+🍷 Degustazioni vini locali
+</div>
+
+<div class="highlight">
+❄️ Sci e ciaspolate in inverno
+</div>
+
+<div class="highlight">
+♨️ Relax alle terme
+</div>
+
+</div>
+
+<div class="card" id="ristoranti">
+<h2>🍝 Dove mangiare</h2>
+
+<div class="restaurant">
+<img src="ristorante1.jpg">
+<div>
+<strong>Ristorante tipico valdostano</strong>
+<p>Consigliato: polenta concia e carbonade</p>
+<a href="#">Apri su Google Maps</a>
+</div>
+</div>
+
+<div class="restaurant">
+<img src="pizzeria.jpg">
+<div>
+<strong>Pizzeria</strong>
+<p>Pizza napoletana e forno a legna</p>
+<a href="#">Apri su Google Maps</a>
+</div>
+</div>
+
+<div class="restaurant">
+<img src="bar.jpg">
+<div>
+<strong>Bar colazioni</strong>
+<p>Caffè e pasticceria artigianale</p>
+<a href="#">Apri su Google Maps</a>
+</div>
+</div>
+
+</div>
+
 <div class="card" id="servizi">
 <h2>☕ Servizi extra</h2>
+
 <div class="badge">Cesto colazione</div>
 <div class="badge">Lavanderia express</div>
 <div class="badge">Noleggio bici</div>
@@ -116,6 +186,7 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <div class="service">
 <h3>Richiedi un servizio</h3>
 <form>
+
 <label>Servizio</label>
 <select>
 <option>Cesto colazione</option>
@@ -131,69 +202,40 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <textarea rows="3"></textarea>
 
 <button type="submit">Invia richiesta</button>
+
 </form>
 </div>
 
 </div>
 
-<div class="card">
-<h2>🚲 Itinerari bici e trekking</h2>
-<ul>
-<li>Percorso panoramico colline</li>
-<li>Pista ciclabile lungo fiume</li>
-<li>Sentiero naturalistico</li>
-</ul>
-<a class="button" href="#">Scarica traccia GPS</a>
-</div>
-
 <div class="card" id="mappa">
 <h2>🗺️ Mappa turistica</h2>
-<iframe class="map" src="https://maps.google.com/maps?q=bologna&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
-<h3>Punti utili vicino casa</h3>
-<ul class="pinlist">
-<li>🍝 Ristorante tipico – <a href="#">Apri mappa</a></li>
-<li>🛒 Supermercato – <a href="#">Apri mappa</a></li>
-<li>💊 Farmacia – <a href="#">Apri mappa</a></li>
-<li>🚗 Parcheggio – <a href="#">Apri mappa</a></li>
-<li>☕ Bar colazioni – <a href="#">Apri mappa</a></li>
+<iframe class="map" src="https://maps.google.com/maps?q=fenis%20aosta&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+<ul>
+<li>🏰 Castello di Fénis</li>
+<li>🍝 Ristoranti consigliati</li>
+<li>🛒 Supermercato</li>
+<li>💊 Farmacia</li>
+<li>☕ Bar colazioni</li>
+<li>🚗 Parcheggio</li>
 </ul>
-</div>
-
-<div class="card" id="ristoranti">
-<h2>🍝 Ristoranti consigliati</h2>
-
-<div class="restaurant">
-<img src="ristorante1.jpg">
-<div>
-<strong>Ristorante tipico</strong>
-<p>Cucina locale tradizionale.</p>
-<a href="#">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="pizzeria.jpg">
-<div>
-<strong>Pizzeria</strong>
-<p>Pizza napoletana e forno a legna.</p>
-<a href="#">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="bar.jpg">
-<div>
-<strong>Bar colazioni</strong>
-<p>Caffè e pasticceria.</p>
-<a href="#">Apri su Google Maps</a>
-</div>
-</div>
 
 </div>
 
 <div class="card">
-<h2>✅ Check‑out checklist</h2>
+<h2>💡 Consigli dell'host</h2>
+<ul>
+<li>🌄 Punto panoramico perfetto per il tramonto</li>
+<li>🥐 Miglior bar per la colazione</li>
+<li>🍷 Cantina locale da visitare</li>
+<li>🥾 Passeggiata poco conosciuta vicino al paese</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>✅ Check-out checklist</h2>
 <ul>
 <li>Spegnere luci</li>
 <li>Chiudere finestre</li>
@@ -202,32 +244,19 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 </ul>
 </div>
 
-<div class="card" id="recensioni">
-<h2>⭐ Lascia una recensione</h2>
-<p>Se ti sei trovato bene una recensione ci aiuta moltissimo.</p>
-<a class="button" href="#">Recensione Airbnb</a>
-<a class="button" href="#">Recensione Google</a>
-</div>
-
 <div class="card">
-<h2>💬 Guest book</h2>
-<form>
-<label>Nome</label>
-<input type="text">
-
-<label>Messaggio</label>
-<textarea rows="4"></textarea>
-
-<button type="submit">Invia</button>
-</form>
+<h2>⭐ Ti è piaciuto il soggiorno?</h2>
+<p>Una recensione ci aiuta moltissimo.</p>
+<a class="button" href="#">Lascia recensione Airbnb</a>
+<a class="button" href="#">Lascia recensione Google</a>
 </div>
 
 <div class="card">
 <h2>🚑 Numeri utili</h2>
 <ul>
 <li>Emergenze: 112</li>
-<li>Taxi</li>
 <li>Farmacia</li>
+<li>Taxi</li>
 <li>Pronto soccorso</li>
 </ul>
 </div>
@@ -236,7 +265,7 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 
 <footer>
 <p>Grazie per aver scelto il nostro appartamento ⭐</p>
-<p>Ti auguriamo un soggiorno fantastico.</p>
+<p>Ti auguriamo un soggiorno fantastico in Valle d'Aosta.</p>
 </footer>
 
 <script type="text/javascript">
