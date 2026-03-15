@@ -38,13 +38,16 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <p>Guida digitale dell'appartamento e della zona</p>
 
 <nav>
-<a href="#wifi">Wi‑Fi</a>
+<a href="#wifi">Wi-Fi</a>
 <a href="#casa">Casa</a>
 <a href="#cosa-vedere">Cosa vedere</a>
-<a href="#ristoranti">Ristoranti</a>
 <a href="#esperienze">Esperienze</a>
+<a href="#itinerario">Itinerario 7 giorni</a>
 <a href="#mappa">Mappa</a>
+<a href="#luoghi">Luoghi top</a>
+<a href="#ristoranti">Ristoranti</a>
 <a href="#servizi">Servizi</a>
+<a href="#checkout">Check-out</a>
 </nav>
 
 <div id="google_translate_element"></div>
@@ -54,14 +57,13 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <div class="container">
 
 <div class="card" id="wifi">
-<h2>📶 Wi‑Fi</h2>
+<h2>📶 Wi-Fi</h2>
 <p><strong>Rete:</strong> INSERIRE_WIFI</p>
 <p><strong>Password:</strong> INSERIRE_PASSWORD</p>
 </div>
 
 <div class="card">
 <h2>📞 Contatta l'host</h2>
-<p>Per qualsiasi necessità siamo sempre disponibili.</p>
 <a class="button" href="tel:+391234567890">📞 Chiama</a>
 <a class="button" href="https://wa.me/391234567890">💬 WhatsApp</a>
 </div>
@@ -79,307 +81,108 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <div class="card" id="casa">
 <h2>🏠 Come usare la casa</h2>
 <div class="grid">
-
-<div>
-<h4>Climatizzatore</h4>
-<img src="clima.jpg">
-<p>Telecomando vicino alla TV.</p>
-</div>
-
-<div>
-<h4>Lavatrice</h4>
-<img src="lavatrice.jpg">
-<p>Programma rapido consigliato.</p>
-</div>
-
-<div>
-<h4>Macchina caffè</h4>
-<img src="caffe.jpg">
-<p>Cialde disponibili nel cassetto.</p>
-</div>
-
-<div>
-<h4>Smart TV</h4>
-<img src="tv.jpg">
-<p>Netflix e streaming disponibili.</p>
-</div>
-
+<div><h4>Climatizzatore</h4><img src="clima.jpg"><p>Telecomando vicino alla TV.</p></div>
+<div><h4>Lavatrice</h4><img src="lavatrice.jpg"><p>Programma rapido consigliato.</p></div>
+<div><h4>Macchina caffè</h4><img src="caffe.jpg"><p>Cialde disponibili.</p></div>
+<div><h4>Smart TV</h4><img src="tv.jpg"><p>Netflix e streaming disponibili.</p></div>
 </div>
 </div>
 
 <div class="card" id="cosa-vedere">
 <h2>🏰 Da non perdere vicino a Fénis</h2>
 <ul>
-<li><strong>Castello di Fénis</strong> – uno dei castelli medievali più iconici della Valle d'Aosta (2 min)</li>
-<li><strong>Città di Aosta</strong> – rovine romane, centro storico e shopping (20 min)</li>
-<li><strong>Castello di Issogne</strong> – famoso per gli affreschi rinascimentali</li>
-<li><strong>Castello di Verrès</strong> – spettacolare fortezza medievale</li>
-<li><strong>Parco Nazionale del Gran Paradiso</strong> – trekking e fauna alpina</li>
-<li><strong>Skyway Monte Bianco</strong> – funivia panoramica sul Monte Bianco</li>
-<li><strong>Terme di Pré‑Saint‑Didier</strong> – spa termale con vista sulle Alpi</li>
+<li>Castello di Fénis</li>
+<li>Città di Aosta</li>
+<li>Castello di Issogne</li>
+<li>Castello di Verrès</li>
+<li>Parco Nazionale del Gran Paradiso</li>
+<li>Skyway Monte Bianco</li>
+<li>Terme di Pré-Saint-Didier</li>
 </ul>
 </div>
 
 <div class="card" id="esperienze">
-<h2>🚲 Esperienze da fare in Valle d'Aosta</h2>
-
-<div class="highlight">🥾 Trekking panoramici nelle valli alpine</div>
-<div class="highlight">🚲 Noleggio e‑bike e percorsi ciclabili tra i vigneti</div>
-<div class="highlight">🍷 Degustazioni di vini valdostani in cantina</div>
-<div class="highlight">🧀 Visita ai caseifici locali (Fontina DOP)</div>
-<div class="highlight">❄️ Sci e snowboard nelle stazioni sciistiche</div>
-<div class="highlight">🛷 Ciaspolate e slittino in inverno</div>
-<div class="highlight">♨️ Relax alle terme di montagna</div>
-<div class="highlight">📸 Tour fotografici tra castelli e panorami alpini</div>
-
+<h2>🚲 Esperienze consigliate</h2>
+<div class="highlight">🥾 Trekking panoramici</div>
+<div class="highlight">🚲 Noleggio e-bike</div>
+<div class="highlight">🍷 Degustazioni vini valdostani</div>
+<div class="highlight">🧀 Visita ai caseifici della Fontina</div>
+<div class="highlight">❄️ Sci e ciaspolate</div>
+<div class="highlight">♨️ Relax alle terme</div>
 </div>
 
-<div class="highlight">
-🚲 Noleggio e‑bike e percorsi ciclabili
-</div>
-
-<div class="highlight">
-🍷 Degustazioni vini locali
-</div>
-
-<div class="highlight">
-❄️ Sci e ciaspolate in inverno
-</div>
-
-<div class="highlight">
-♨️ Relax alle terme
-</div>
-
-</div>
-
-<div class="card" id="ristoranti">
-<h2>🍝 Ristoranti consigliati vicino a Fénis</h2>
-
-<div class="restaurant">
-<img src="ristorante1.jpg">
-<div>
-<strong>La Chatelaine – Fénis</strong>
-<p>Cucina tipica valdostana. Consigliato: polenta concia.</p>
-<a href="https://www.google.com/maps/search/?api=1&query=La+Chatelaine+Fenis">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="ristorante2.jpg">
-<div>
-<strong>Ristorante Comtes de Challant</strong>
-<p>Piatti locali e atmosfera storica.</p>
-<a href="https://www.google.com/maps/search/?api=1&query=Comtes+de+Challant+Fenis">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="pizzeria.jpg">
-<div>
-<strong>Pizzeria locale</strong>
-<p>Pizza napoletana e forno a legna.</p>
-<a href="https://www.google.com/maps/search/?api=1&query=pizzeria+fenis">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="bar.jpg">
-<div>
-<strong>Bar per colazione</strong>
-<p>Caffè, cappuccino e pasticceria artigianale.</p>
-<a href="https://www.google.com/maps/search/?api=1&query=bar+fenis">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="ristorante3.jpg">
-<div>
-<strong>Ristorante ad Aosta</strong>
-<p>Perfetto per cena dopo la visita al centro storico.</p>
-<a href="https://www.google.com/maps/search/?api=1&query=ristoranti+aosta">Apri su Google Maps</a>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="restaurant">
-<img src="pizzeria.jpg">
-<div>
-<strong>Pizzeria</strong>
-<p>Pizza napoletana e forno a legna</p>
-<a href="#">Apri su Google Maps</a>
-</div>
-</div>
-
-<div class="restaurant">
-<img src="bar.jpg">
-<div>
-<strong>Bar colazioni</strong>
-<p>Caffè e pasticceria artigianale</p>
-<a href="#">Apri su Google Maps</a>
-</div>
-</div>
-
-</div>
-
-<div class="card" id="servizi">
-<h2>☕ Servizi extra</h2>
-
-<div class="badge">Cesto colazione</div>
-<div class="badge">Lavanderia express</div>
-<div class="badge">Noleggio bici</div>
-<div class="badge">Tour guidati</div>
-
-<div class="service">
-<h3>Richiedi un servizio</h3>
-<form>
-
-<label>Servizio</label>
-<select>
-<option>Cesto colazione</option>
-<option>Lavanderia express</option>
-<option>Noleggio bici</option>
-<option>Tour guidato</option>
-</select>
-
-<label>Data</label>
-<input type="date">
-
-<label>Note</label>
-<textarea rows="3"></textarea>
-
-<button type="submit">Invia richiesta</button>
-
-</form>
-</div>
-
+<div class="card" id="itinerario">
+<h2>🗓️ Itinerario consigliato – 7 giorni</h2>
+<ul>
+<li>Giorno 1: Castello di Fénis e borgo</li>
+<li>Giorno 2: Visita ad Aosta</li>
+<li>Giorno 3: Parco Nazionale Gran Paradiso</li>
+<li>Giorno 4: Castelli di Issogne e Verrès</li>
+<li>Giorno 5: Skyway Monte Bianco</li>
+<li>Giorno 6: Terme di Pré-Saint-Didier</li>
+<li>Giorno 7: Degustazione vini locali</li>
+</ul>
 </div>
 
 <div class="card" id="mappa">
 <h2>🗺️ Mappa turistica</h2>
-
 <iframe class="map" src="https://maps.google.com/maps?q=fenis%20aosta&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-
-<h3>Punti utili vicino all'appartamento</h3>
-
-<ul>
-<li>🏰 Castello di Fénis – <a href="https://www.google.com/maps/search/?api=1&query=castello+di+fenis">Apri mappa</a></li>
-<li>🍝 Ristoranti locali – <a href="https://www.google.com/maps/search/?api=1&query=ristoranti+fenis">Apri mappa</a></li>
-<li>🛒 Supermercato – <a href="https://www.google.com/maps/search/?api=1&query=supermercato+fenis">Apri mappa</a></li>
-<li>💊 Farmacia – <a href="https://www.google.com/maps/search/?api=1&query=farmacia+fenis">Apri mappa</a></li>
-<li>☕ Bar e colazioni – <a href="https://www.google.com/maps/search/?api=1&query=bar+fenis">Apri mappa</a></li>
-<li>🚗 Parcheggio – <a href="https://www.google.com/maps/search/?api=1&query=parcheggio+fenis">Apri mappa</a></li>
-<li>🏥 Ospedale di Aosta – <a href="https://www.google.com/maps/search/?api=1&query=ospedale+aosta">Apri mappa</a></li>
-<li>🚉 Stazione ferroviaria Aosta – <a href="https://www.google.com/maps/search/?api=1&query=stazione+ferroviaria+aosta">Apri mappa</a></li>
-</ul>
-
 </div>
 
-<div class="card">
-<h2>💡 Consigli dell'host</h2>
+<div class="card" id="luoghi">
+<h2>🌄 I luoghi più belli della Valle d'Aosta</h2>
 <ul>
-<li>🌄 Punto panoramico perfetto per il tramonto</li>
-<li>🥐 Miglior bar per la colazione</li>
-<li>🍷 Cantina locale da visitare</li>
-<li>🥾 Passeggiata poco conosciuta vicino al paese</li>
+<li>Monte Bianco</li>
+<li>Val Ferret</li>
+<li>Lago Blu Cervinia</li>
+<li>Gran Paradiso</li>
+<li>Castello di Fénis</li>
+<li>Courmayeur</li>
+<li>Forte di Bard</li>
+<li>Terme Pré-Saint-Didier</li>
 </ul>
 </div>
 
-<div class="card">
-<h2>✅ Check‑out checklist</h2>
+<div class="card" id="ristoranti">
+<h2>🍝 Ristoranti consigliati</h2>
+<div class="restaurant"><img src="ristorante1.jpg"><div><strong>La Chatelaine</strong><p>Cucina valdostana.</p></div></div>
+<div class="restaurant"><img src="ristorante2.jpg"><div><strong>Comtes de Challant</strong><p>Ristorante tipico.</p></div></div>
+<div class="restaurant"><img src="pizzeria.jpg"><div><strong>Pizzeria locale</strong></div></div>
+</div>
+
+<div class="card" id="servizi">
+<h2>☕ Servizi extra</h2>
+<div class="badge">Cesto colazione</div>
+<div class="badge">Lavanderia express</div>
+<div class="badge">Noleggio bici</div>
+<div class="badge">Tour guidati</div>
+</div>
+
+<div class="card" id="checkout">
+<h2>✅ Check-out checklist</h2>
 <ul>
 <li>Spegnere luci</li>
 <li>Chiudere finestre</li>
 <li>Buttare la spazzatura</li>
-<li>Lasciare le chiavi dove indicato</li>
+<li>Lasciare le chiavi</li>
 </ul>
 </div>
 
 <div class="card">
 <h2>⭐ Ti è piaciuto il soggiorno?</h2>
-<p>Una recensione ci aiuta moltissimo.</p>
 <a class="button" href="#">Lascia recensione Airbnb</a>
 <a class="button" href="#">Lascia recensione Google</a>
-</div>
-
-<div class="card">
-<h2>🚑 Numeri utili</h2>
-<ul>
-<li>Emergenze: 112</li>
-<li>Farmacia</li>
-<li>Taxi</li>
-<li>Pronto soccorso</li>
-</ul>
 </div>
 
 </div>
 
 <footer>
 <p>Grazie per aver scelto il nostro appartamento ⭐</p>
-<p>Ti auguriamo un soggiorno fantastico in Valle d'Aosta.</p>
 </footer>
 
-<div class="container">
-
-<div class="card">
-<h2>🗓️ Itinerario consigliato – 7 giorni in Valle d'Aosta</h2>
-
-<ul>
-<li><strong>Giorno 1:</strong> Visita al Castello di Fénis e passeggiata nel borgo</li>
-<li><strong>Giorno 2:</strong> Esplora la città di Aosta (Arco di Augusto, Teatro Romano, centro storico)</li>
-<li><strong>Giorno 3:</strong> Escursione nel Parco Nazionale del Gran Paradiso</li>
-<li><strong>Giorno 4:</strong> Gita ai castelli di Issogne e Verrès</li>
-<li><strong>Giorno 5:</strong> Funivia Skyway Monte Bianco a Courmayeur</li>
-<li><strong>Giorno 6:</strong> Relax alle Terme di Pré-Saint-Didier</li>
-<li><strong>Giorno 7:</strong> Degustazione vini e prodotti tipici valdostani</li>
-</ul>
-
-</div>
-
-<div class="card">
-<h2>📍 Mappa turistica interattiva</h2>
-<p>Abbiamo creato una mappa con tutti i luoghi utili per il vostro soggiorno:</p>
-<ul>
-<li>🏰 Castelli</li>
-<li>🍝 Ristoranti</li>
-<li>🥾 Trekking</li>
-<li>🛒 Supermercati</li>
-<li>☕ Bar</li>
-<li>🚗 Parcheggi</li>
-</ul>
-
-<p>Clicca qui per aprire la mappa completa:</p>
-<a class="button" href="https://www.google.com/maps">Apri mappa turistica</a>
-</div>
-
-<div class="card">
-<h2>🌄 I 10 luoghi più belli della Valle d'Aosta</h2>
-<ul>
-<li>Monte Bianco</li>
-<li>Val Ferret</li>
-<li>Lago Blu (Breuil-Cervinia)</li>
-<li>Parco Nazionale del Gran Paradiso</li>
-<li>Castello di Fénis</li>
-<li>Castello di Issogne</li>
-<li>Courmayeur</li>
-<li>Terme di Pré-Saint-Didier</li>
-<li>Forte di Bard</li>
-<li>Parco del Mont Avic</li>
-</ul>
-</div>
-
-</div>
-
-</body>
-</html>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
-}
+<script>
+function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'it'},'google_translate_element');}
 </script>
-
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
