@@ -9,24 +9,24 @@
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#333}
 header{background:#1f2f3f;color:white;padding:26px;text-align:center}
 nav{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
-nav a{color:white;text-decoration:none;font-size:14px;background:#32475b;padding:6px 10px;border-radius:6px}
-.container{max-width:1050px;margin:auto;padding:20px}
-.card{background:white;padding:22px;margin-bottom:20px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.08)}
+nav a{color:white;text-decoration:none;font-size:14px;background:#32475b;padding:7px 12px;border-radius:8px}
+.container{max-width:1100px;margin:auto;padding:20px}
+.card{background:white;padding:22px;margin-bottom:22px;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
 h2{margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-img{width:100%;border-radius:8px}
-.button{display:inline-block;padding:10px 16px;background:#1f2f3f;color:white;text-decoration:none;border-radius:6px;margin:6px 4px;font-size:14px}
-.badge{background:#eef2f6;padding:7px 11px;border-radius:6px;font-size:14px;display:inline-block;margin:4px}
+img{width:100%;border-radius:10px}
+.button{display:inline-block;padding:10px 16px;background:#1f2f3f;color:white;text-decoration:none;border-radius:8px;margin:6px 4px;font-size:14px}
+.badge{background:#eef2f6;padding:8px 12px;border-radius:8px;font-size:14px;display:inline-block;margin:4px}
 ul{padding-left:18px}
 footer{text-align:center;padding:30px;font-size:14px;color:#777}
-.map{width:100%;height:380px;border:0;border-radius:10px}
-.service{background:#f0f3f7;padding:14px;border-radius:8px;margin-top:10px}
+.map{width:100%;height:380px;border:0;border-radius:12px}
+.service{background:#f0f3f7;padding:14px;border-radius:10px;margin-top:10px}
 .restaurant{display:grid;grid-template-columns:110px 1fr;gap:12px;margin-bottom:14px}
-.restaurant img{width:110px;height:85px;object-fit:cover}
-.highlight{background:#f0f3f7;padding:12px;border-radius:8px;margin-top:10px}
-input,textarea,select{width:100%;padding:8px;margin-top:6px;margin-bottom:10px;border-radius:6px;border:1px solid #ccc}
-form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-radius:6px}
+.restaurant img{width:110px;height:90px;object-fit:cover}
+.highlight{background:#f0f3f7;padding:12px;border-radius:10px;margin-top:10px}
+.place-card{background:#f9fbfd;padding:10px;border-radius:10px}
+.place-card img{height:150px;object-fit:cover}
 </style>
 
 </head>
@@ -35,19 +35,19 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 
 <header>
 <h1>🏡 Benvenuti a Fénis</h1>
-<p>Guida digitale dell'appartamento e della zona</p>
+<p>Guida digitale dell'appartamento e della Valle d'Aosta</p>
 
 <nav>
-<a href="#wifi">Wi-Fi</a>
+<a href="#wifi">Wi‑Fi</a>
 <a href="#casa">Casa</a>
-<a href="#cosa-vedere">Cosa vedere</a>
+<a href="#cosa-vedere">Attrazioni</a>
 <a href="#esperienze">Esperienze</a>
-<a href="#itinerario">Itinerario 7 giorni</a>
+<a href="#itinerario">Itinerario</a>
 <a href="#mappa">Mappa</a>
 <a href="#luoghi">Luoghi top</a>
 <a href="#ristoranti">Ristoranti</a>
 <a href="#servizi">Servizi</a>
-<a href="#checkout">Check-out</a>
+<a href="#checkout">Check‑out</a>
 </nav>
 
 <div id="google_translate_element"></div>
@@ -56,16 +56,31 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 
 <div class="container">
 
+<div class="card" style="text-align:center">
+<h2>👋 Benvenuti!</h2>
+<p>Usa questi pulsanti rapidi per trovare subito le informazioni più utili.</p>
+
+<a class="button" href="#cosa-vedere">🗺️ Cosa vedere vicino a Fénis</a>
+<a class="button" href="#ristoranti">🍝 Dove mangiare</a>
+<a class="button" href="https://wa.me/391234567890">📞 Contatta l'host</a>
+
+<div style="margin-top:15px">
+<p><strong>Scansiona il QR code per aprire questa guida</strong></p>
+<img src="qr-guida.png" style="width:150px">
+</div>
+
+</div>
+
 <div class="card" id="wifi">
-<h2>📶 Wi-Fi</h2>
+<h2>📶 Wi‑Fi</h2>
 <p><strong>Rete:</strong> INSERIRE_WIFI</p>
 <p><strong>Password:</strong> INSERIRE_PASSWORD</p>
 </div>
 
 <div class="card">
 <h2>📞 Contatta l'host</h2>
-<a class="button" href="tel:+391234567890">📞 Chiama</a>
-<a class="button" href="https://wa.me/391234567890">💬 WhatsApp</a>
+<a class="button" href="tel:+391234567890">Chiama</a>
+<a class="button" href="https://wa.me/391234567890">WhatsApp</a>
 </div>
 
 <div class="card">
@@ -81,30 +96,48 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <div class="card" id="casa">
 <h2>🏠 Come usare la casa</h2>
 <div class="grid">
-<div><h4>Climatizzatore</h4><img src="clima.jpg"><p>Telecomando vicino alla TV.</p></div>
-<div><h4>Lavatrice</h4><img src="lavatrice.jpg"><p>Programma rapido consigliato.</p></div>
-<div><h4>Macchina caffè</h4><img src="caffe.jpg"><p>Cialde disponibili.</p></div>
-<div><h4>Smart TV</h4><img src="tv.jpg"><p>Netflix e streaming disponibili.</p></div>
+<div><img src="clima.jpg"><p><strong>Climatizzatore</strong><br>Telecomando vicino alla TV.</p></div>
+<div><img src="lavatrice.jpg"><p><strong>Lavatrice</strong><br>Programma rapido consigliato.</p></div>
+<div><img src="caffe.jpg"><p><strong>Macchina caffè</strong><br>Cialde disponibili.</p></div>
+<div><img src="tv.jpg"><p><strong>Smart TV</strong><br>Netflix disponibile.</p></div>
 </div>
 </div>
 
 <div class="card" id="cosa-vedere">
-<h2>🏰 Da non perdere vicino a Fénis</h2>
-<ul>
-<li>Castello di Fénis</li>
-<li>Città di Aosta</li>
-<li>Castello di Issogne</li>
-<li>Castello di Verrès</li>
-<li>Parco Nazionale del Gran Paradiso</li>
-<li>Skyway Monte Bianco</li>
-<li>Terme di Pré-Saint-Didier</li>
-</ul>
+<h2>🏰 Attrazioni vicino a Fénis</h2>
+<div class="grid">
+
+<div class="place-card">
+<img src="castello-fenis.jpg">
+<p><strong>Castello di Fénis</strong></p>
+<a class="button" href="https://maps.google.com/?q=Castello+di+Fenis">Apri mappa</a>
+</div>
+
+<div class="place-card">
+<img src="aosta.jpg">
+<p><strong>Città di Aosta</strong></p>
+<a class="button" href="https://maps.google.com/?q=Aosta">Apri mappa</a>
+</div>
+
+<div class="place-card">
+<img src="gran-paradiso.jpg">
+<p><strong>Parco Nazionale Gran Paradiso</strong></p>
+<a class="button" href="https://maps.google.com/?q=Parco+Nazionale+Gran+Paradiso">Apri mappa</a>
+</div>
+
+<div class="place-card">
+<img src="skyway.jpg">
+<p><strong>Skyway Monte Bianco</strong></p>
+<a class="button" href="https://maps.google.com/?q=Skyway+Monte+Bianco">Apri mappa</a>
+</div>
+
+</div>
 </div>
 
 <div class="card" id="esperienze">
 <h2>🚲 Esperienze consigliate</h2>
 <div class="highlight">🥾 Trekking panoramici</div>
-<div class="highlight">🚲 Noleggio e-bike</div>
+<div class="highlight">🚲 Noleggio e‑bike</div>
 <div class="highlight">🍷 Degustazioni vini valdostani</div>
 <div class="highlight">🧀 Visita ai caseifici della Fontina</div>
 <div class="highlight">❄️ Sci e ciaspolate</div>
@@ -114,13 +147,13 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <div class="card" id="itinerario">
 <h2>🗓️ Itinerario consigliato – 7 giorni</h2>
 <ul>
-<li>Giorno 1: Castello di Fénis e borgo</li>
-<li>Giorno 2: Visita ad Aosta</li>
-<li>Giorno 3: Parco Nazionale Gran Paradiso</li>
-<li>Giorno 4: Castelli di Issogne e Verrès</li>
-<li>Giorno 5: Skyway Monte Bianco</li>
-<li>Giorno 6: Terme di Pré-Saint-Didier</li>
-<li>Giorno 7: Degustazione vini locali</li>
+<li>Giorno 1 – Castello di Fénis e borgo</li>
+<li>Giorno 2 – Visita alla città di Aosta</li>
+<li>Giorno 3 – Trekking nel Gran Paradiso</li>
+<li>Giorno 4 – Castelli di Issogne e Verrès</li>
+<li>Giorno 5 – Funivia Skyway Monte Bianco</li>
+<li>Giorno 6 – Relax alle Terme di Pré‑Saint‑Didier</li>
+<li>Giorno 7 – Degustazione vini valdostani</li>
 </ul>
 </div>
 
@@ -134,19 +167,19 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 <ul>
 <li>Monte Bianco</li>
 <li>Val Ferret</li>
-<li>Lago Blu Cervinia</li>
+<li>Lago Blu – Cervinia</li>
 <li>Gran Paradiso</li>
 <li>Castello di Fénis</li>
 <li>Courmayeur</li>
 <li>Forte di Bard</li>
-<li>Terme Pré-Saint-Didier</li>
+<li>Terme di Pré‑Saint‑Didier</li>
 </ul>
 </div>
 
 <div class="card" id="ristoranti">
 <h2>🍝 Ristoranti consigliati</h2>
-<div class="restaurant"><img src="ristorante1.jpg"><div><strong>La Chatelaine</strong><p>Cucina valdostana.</p></div></div>
-<div class="restaurant"><img src="ristorante2.jpg"><div><strong>Comtes de Challant</strong><p>Ristorante tipico.</p></div></div>
+<div class="restaurant"><img src="ristorante1.jpg"><div><strong>La Chatelaine</strong><br>Cucina valdostana</div></div>
+<div class="restaurant"><img src="ristorante2.jpg"><div><strong>Comtes de Challant</strong><br>Ristorante tipico</div></div>
 <div class="restaurant"><img src="pizzeria.jpg"><div><strong>Pizzeria locale</strong></div></div>
 </div>
 
@@ -159,7 +192,7 @@ form button{background:#1f2f3f;color:white;border:none;padding:10px 14px;border-
 </div>
 
 <div class="card" id="checkout">
-<h2>✅ Check-out checklist</h2>
+<h2>✅ Check‑out checklist</h2>
 <ul>
 <li>Spegnere luci</li>
 <li>Chiudere finestre</li>
