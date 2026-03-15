@@ -21,7 +21,6 @@ img{width:100%;border-radius:10px}
 ul{padding-left:18px}
 footer{text-align:center;padding:30px;font-size:14px;color:#777}
 .map{width:100%;height:380px;border:0;border-radius:12px}
-.service{background:#f0f3f7;padding:14px;border-radius:10px;margin-top:10px}
 .restaurant{display:grid;grid-template-columns:110px 1fr;gap:12px;margin-bottom:14px}
 .restaurant img{width:110px;height:90px;object-fit:cover}
 .highlight{background:#f0f3f7;padding:12px;border-radius:10px;margin-top:10px}
@@ -38,16 +37,12 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 <p>Guida digitale dell'appartamento e della Valle d'Aosta</p>
 
 <nav>
-<a href="#wifi">Wi‑Fi</a>
+<a href="#wifi">Wi-Fi</a>
 <a href="#casa">Casa</a>
-<a href="#cosa-vedere">Attrazioni</a>
-<a href="#esperienze">Esperienze</a>
-<a href="#itinerario">Itinerario</a>
-<a href="#mappa">Mappa</a>
-<a href="#luoghi">Luoghi top</a>
-<a href="#ristoranti">Ristoranti</a>
-<a href="#servizi">Servizi</a>
-<a href="#checkout">Check‑out</a>
+<a href="#turismo">Cosa vedere</a>
+<a href="#gastronomia">Consigli enogastronomici</a>
+<a href="#servizi">Servizi extra</a>
+<a href="#checkout">Check-out</a>
 </nav>
 
 <div id="google_translate_element"></div>
@@ -60,8 +55,8 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 <h2>👋 Benvenuti!</h2>
 <p>Usa questi pulsanti rapidi per trovare subito le informazioni più utili.</p>
 
-<a class="button" href="#cosa-vedere">🗺️ Cosa vedere vicino a Fénis</a>
-<a class="button" href="#ristoranti">🍝 Dove mangiare</a>
+<a class="button" href="#turismo">🗺️ Cosa vedere vicino a Fénis</a>
+<a class="button" href="#gastronomia">🍝 Consigli enogastronomici</a>
 <a class="button" href="https://wa.me/391234567890">📞 Contatta l'host</a>
 
 <div style="margin-top:15px">
@@ -72,15 +67,9 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 </div>
 
 <div class="card" id="wifi">
-<h2>📶 Wi‑Fi</h2>
+<h2>📶 Wi-Fi</h2>
 <p><strong>Rete:</strong> INSERIRE_WIFI</p>
 <p><strong>Password:</strong> INSERIRE_PASSWORD</p>
-</div>
-
-<div class="card">
-<h2>📞 Contatta l'host</h2>
-<a class="button" href="tel:+391234567890">Chiama</a>
-<a class="button" href="https://wa.me/391234567890">WhatsApp</a>
 </div>
 
 <div class="card">
@@ -93,6 +82,18 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 </div>
 </div>
 
+<!-- SERVIZI EXTRA SPOSTATI QUI -->
+<div class="card" id="servizi">
+<h2>☕ Servizi extra disponibili</h2>
+<p>Puoi richiedere questi servizi durante il soggiorno.</p>
+
+<div class="badge">🥐 Cesto colazione</div>
+<div class="badge">👕 Lavanderia express</div>
+<div class="badge">🚲 Noleggio bici</div>
+<div class="badge">🥾 Tour o escursioni guidate</div>
+
+</div>
+
 <div class="card" id="casa">
 <h2>🏠 Come usare la casa</h2>
 <div class="grid">
@@ -103,7 +104,9 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 </div>
 </div>
 
-<div class="card" id="cosa-vedere">
+<div id="turismo">
+
+<div class="card">
 <h2>🏰 Attrazioni vicino a Fénis</h2>
 <div class="grid">
 
@@ -134,17 +137,17 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 </div>
 </div>
 
-<div class="card" id="esperienze">
+<div class="card">
 <h2>🚲 Esperienze consigliate</h2>
 <div class="highlight">🥾 Trekking panoramici</div>
-<div class="highlight">🚲 Noleggio e‑bike</div>
+<div class="highlight">🚲 Noleggio e-bike</div>
 <div class="highlight">🍷 Degustazioni vini valdostani</div>
 <div class="highlight">🧀 Visita ai caseifici della Fontina</div>
 <div class="highlight">❄️ Sci e ciaspolate</div>
 <div class="highlight">♨️ Relax alle terme</div>
 </div>
 
-<div class="card" id="itinerario">
+<div class="card">
 <h2>🗓️ Itinerario consigliato – 7 giorni</h2>
 <ul>
 <li>Giorno 1 – Castello di Fénis e borgo</li>
@@ -152,7 +155,7 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 <li>Giorno 3 – Trekking nel Gran Paradiso</li>
 <li>Giorno 4 – Castelli di Issogne e Verrès</li>
 <li>Giorno 5 – Funivia Skyway Monte Bianco</li>
-<li>Giorno 6 – Relax alle Terme di Pré‑Saint‑Didier</li>
+<li>Giorno 6 – Relax alle Terme di Pré-Saint-Didier</li>
 <li>Giorno 7 – Degustazione vini valdostani</li>
 </ul>
 </div>
@@ -162,37 +165,35 @@ footer{text-align:center;padding:30px;font-size:14px;color:#777}
 <iframe class="map" src="https://maps.google.com/maps?q=fenis%20aosta&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 
-<div class="card" id="luoghi">
+<div class="card">
 <h2>🌄 I luoghi più belli della Valle d'Aosta</h2>
 <ul>
 <li>Monte Bianco</li>
 <li>Val Ferret</li>
 <li>Lago Blu – Cervinia</li>
 <li>Gran Paradiso</li>
-<li>Castello di Fénis</li>
 <li>Courmayeur</li>
 <li>Forte di Bard</li>
-<li>Terme di Pré‑Saint‑Didier</li>
+<li>Terme di Pré-Saint-Didier</li>
 </ul>
 </div>
 
-<div class="card" id="ristoranti">
-<h2>🍝 Ristoranti consigliati</h2>
+</div>
+
+<div class="card" id="gastronomia">
+<h2>🍝 Consigli enogastronomici</h2>
+
 <div class="restaurant"><img src="ristorante1.jpg"><div><strong>La Chatelaine</strong><br>Cucina valdostana</div></div>
 <div class="restaurant"><img src="ristorante2.jpg"><div><strong>Comtes de Challant</strong><br>Ristorante tipico</div></div>
 <div class="restaurant"><img src="pizzeria.jpg"><div><strong>Pizzeria locale</strong></div></div>
-</div>
+<div class="restaurant"><img src="gelateria.jpg"><div><strong>Gelateria artigianale</strong></div></div>
+<div class="restaurant"><img src="pasticceria.jpg"><div><strong>Pasticceria locale</strong></div></div>
+<div class="restaurant"><img src="formaggeria.jpg"><div><strong>Formaggeria valdostana</strong><br>Fontina DOP</div></div>
 
-<div class="card" id="servizi">
-<h2>☕ Servizi extra</h2>
-<div class="badge">Cesto colazione</div>
-<div class="badge">Lavanderia express</div>
-<div class="badge">Noleggio bici</div>
-<div class="badge">Tour guidati</div>
 </div>
 
 <div class="card" id="checkout">
-<h2>✅ Check‑out checklist</h2>
+<h2>✅ Check-out checklist</h2>
 <ul>
 <li>Spegnere luci</li>
 <li>Chiudere finestre</li>
